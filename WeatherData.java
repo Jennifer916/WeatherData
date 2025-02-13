@@ -35,9 +35,12 @@ public class WeatherData
      for (double t: temperatures) {
         if (t>threshold) {
             heatWave++;
+        } else {
+            heatWave=0;
         }
-        if (heatWave>max) max = heatWave; 
-        else heatWave=0;
+        if (heatWave>max) {
+            max = heatWave; 
+        }
      }
      return max;
     }

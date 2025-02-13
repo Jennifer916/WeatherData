@@ -13,5 +13,12 @@ public class Main {
        // System.out.println(w); 
        w.cleanData(85.0, 120.0);
        System.out.println(w);
+       double[] newTemps= { 100.5, 98.5, 102.0, 103.9, 87.5, 105.2, 90.3, 94.8, 109.1, 102.1, 107.4, 93.2};
+       ArrayList<Double> newList = new ArrayList<Double> ();
+       for (double n : newTemps) newList.add(n);
+       w= new WeatherData(newList);
+        System.out.println(w.longestHeatWave(100.5));
+        w= new WeatherData(newList);
+        System.out.println(w.longestHeatWave(95.2));
     }
 }
