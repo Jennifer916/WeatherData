@@ -19,6 +19,7 @@ public class Main {
        w= new WeatherData(newList);
         System.out.println(w.longestHeatWave(100.5));
         w= new WeatherData(newList);
-        System.out.println(w.longestHeatWave(95.2));
+        System.out.println(w.longestHeatWave(95.2)); 
+        
     }
 }
